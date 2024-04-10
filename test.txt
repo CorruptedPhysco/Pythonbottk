@@ -1,0 +1,37 @@
+
+
+class Solution:
+
+    #function to convert a given Gray equivalent n to Binary equivalent.
+
+    def grayToBinary(self,n):
+
+        b=0
+
+
+
+        #We use a loop and Right shift n everytime until it becomes 0.
+
+        for i in iter(int,1):
+
+            if(n>0):
+
+                b=(b^n)
+
+                n=n>>1
+
+            else:
+
+                break
+
+
+
+            
+
+        #returning the Binary equivalent.   
+
+        return b
+
+        
+
+    
